@@ -3,5 +3,5 @@ def facto(n):
         return 1
     else:
         return n * facto(n-1)
-
+num = input()
 print(facto(10))
