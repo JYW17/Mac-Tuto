@@ -1,5 +1,4 @@
 from collections import Counter
-import math
 import sys
 
 input = sys.stdin.readline
@@ -10,8 +9,6 @@ lis = []
 for i in range(n):
     x = int(input())
     lis.append(x)
-
-
 
 #산술평균
 print(round(sum(lis) / n))
