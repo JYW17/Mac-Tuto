@@ -14,11 +14,6 @@
 # print(a)
 # print(b)
 
-
-
-
-
-
 # def manyParameters(num, *args):
 #     print(num)
 #     for i in args:
