@@ -9,5 +9,7 @@
 # for i in range(l):
 #     rst += (ord(x[i])-96)*(31**i)
 # print(rst)
-for i in range(10, 1, -1):
-    print(i)
+lis = [12,2,2,3,4,]
+print(lis)
+lis.clear()
+print(lis)
