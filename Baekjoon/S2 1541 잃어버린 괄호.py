@@ -5,6 +5,7 @@ poly = input()
 
 pol = []
 add = []
+final = []
 num = ""
 
 for i in poly:
@@ -17,6 +18,13 @@ for i in poly:
     elif i == "+":
         add.append(int(num))
         num = ""
+    
     else:
         num += i
+add.append(int(num))
+pol.append(sum(add))
 
+rst = 2*pol[0]
+for i in pol:
+    rst -= i
+print(rst)

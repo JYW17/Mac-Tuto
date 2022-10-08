@@ -41,19 +41,24 @@
 # jason = Student()
 # jason.study()
 
-from abc import *
-class Animal(metaclass = ABCMeta):
-    @abstractclassmethod
-    def do_say(self):
-        pass
+# from abc import *
+# class Animal(metaclass = ABCMeta):
+#     @abstractclassmethod
+#     def do_say(self):
+#         pass
 
-class Dog (Animal):
-    def do_say(self):
-        print("멍 멍")
+# class Dog (Animal):
+#     def do_say(self):
+#         print("멍 멍")
 
-class ForestFactory(object):
-    def make_sound(self, object_type):
-        return eval(object_type)().do_say()
+# class ForestFactory(object):
+#     def make_sound(self, object_type):
+#         return eval(object_type)().do_say()
 
-ff = ForestFactory()
-ff.make_sound("Dog")
+# ff = ForestFactory()
+# ff.make_sound("Dog")
+
+st = '12345'
+index = -2
+rst = st[:index] + "." + st[index:]
+print(rst)

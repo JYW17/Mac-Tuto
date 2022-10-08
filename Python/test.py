@@ -9,7 +9,3 @@
 # for i in range(l):
 #     rst += (ord(x[i])-96)*(31**i)
 # print(rst)
-lis = [12,2,2,3,4,]
-print(lis)
-lis.clear()
-print(lis)

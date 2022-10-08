@@ -50,7 +50,12 @@ else:
 rst = str(a+b)
 index = -max(pointA, pointB)
 if index < 0:
-    rst = rst[:index] + "." + rst[index:]
+    if abs(index) > len(rst):
+        rst = "0."+ "0"*(abs(index)-1) + rst 
+    elif abs(index) == len(rst):
+        rst = "0." + rst
+    else:
+        rst = rst[:index] + "." + rst[index:]
 else:
     rst = int(rst)
 print(rst)
