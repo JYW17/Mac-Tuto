@@ -1,8 +1,11 @@
-poly = input()
-rst = ""
-for i in poly:
-    if i == "x":
-        break
-    else:
-        rst += i
-print(int(rst))
+
+# while True:
+#     if judge(i):
+#         if i[0][0] == -1:
+#             cntMinus1 += 1
+#         elif i[0][0] == 0:
+#             cnt0 += 1
+#         elif i[0][0] == 1:
+#             cnt1 += 1
+#     else:
+        
