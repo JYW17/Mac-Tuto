@@ -9,7 +9,11 @@
 # for i in range(l):
 #     rst += (ord(x[i])-96)*(31**i)
 # print(rst)
+a = 100
 
-lis = [6]
-s = set([1,2,3,4,5])
-s.update(lis)
+if a == 100:
+    print(11)
+elif a % 2 == 0:
+    print(12)
+else:
+    print(13)

@@ -12,11 +12,15 @@ for i in range(2, int(math.sqrt(1000))+1):
             j += 1
 
 n = int(input())
-lis = list(map(int,input().split()))
+# lis = list(map(int,input().split()))
 count = 0
 
-for i in lis:
-    if arr[i] == True:
-        count += 1
+# for i in lis:
+#     if arr[i] == True:
+#         count += 1
 
+
+for i in arr:
+    if i:
+        count += 1
 print(count)
