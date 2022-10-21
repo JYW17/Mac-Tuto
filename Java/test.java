@@ -5,22 +5,10 @@ import java.io.InputStreamReader;
 //test
 public class test{
     public static void main(String args[]) throws IOException{
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        int sugar = Integer.parseInt(bf.readLine());
-        int result = 0;
+        String s = "Hello";
+        for(int i = 0; i < s.length(); i++){
+            System.out.println(s.charAt(i));
+        }
 
-        while (sugar >= 0){
-            if (sugar % 5 == 0){
-            result += sugar/5;
-            System.out.println(result);
-            break;
-            }
-            sugar -= 3;
-            result += 1;
-        
-        }
-        if (sugar < 0){
-            System.out.println(-1);
-        }
     }
 }
