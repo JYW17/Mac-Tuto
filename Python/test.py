@@ -9,6 +9,7 @@
 # for i in range(l):
 #     rst += (ord(x[i])-96)*(31**i)
 # print(rst)
+<<<<<<< HEAD
 import sys
 input = sys.stdin.readline
 
@@ -20,3 +21,10 @@ while True:
         print(sen[0], 'Senior')
     else:
         print(sen[0], 'Junior')
+=======
+dic = {'eye':1, 'face':2, 'shoes': 3}
+lis = []
+for i in dic:
+    lis.append(dic[i])
+print(lis)
+>>>>>>> d31087db513691e66cfeedb01884471d5e823614
