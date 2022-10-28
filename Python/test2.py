@@ -58,7 +58,8 @@
 # ff = ForestFactory()
 # ff.make_sound("Dog")
 
-st = '12345'
-index = -2
-rst = st[:index] + "." + st[index:]
-print(rst)
+lis = [1,2,3,4,5]
+
+print(lis[0:5])
+print(lis[0:1])
+print(lis[2:2])
