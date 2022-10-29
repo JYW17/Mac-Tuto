@@ -9,8 +9,15 @@
 # for i in range(l):
 #     rst += (ord(x[i])-96)*(31**i)
 # print(rst)
-dic = {'eye':1, 'face':2, 'shoes': 3}
-lis = []
-for i in dic:
-    lis.append(dic[i])
-print(lis)
+k, l = map(int,input().split())
+rst = 0
+for i in range(2, l):
+    if k % i == 0 and i < l:
+        temp = False
+        rst = i
+        break
+
+if rst == 0:
+    print('GOOD')
+else:
+    print('BAD', rst)

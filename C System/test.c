@@ -1,14 +1,9 @@
 #include <stdio.h>
 
 int main(void){
-    printf("Hello World!");
-
-    int a,b;
-    
-    scanf("%d", &a);
-    char str[a];
-    scanf("%s", str);
-    printf("%s", str);
+    int count = 5;
+    count++;
+    printf("%d", count);
     
     return 0;
 }
