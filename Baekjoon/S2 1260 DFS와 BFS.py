@@ -34,7 +34,7 @@ def bfs(graph, v):
         
         visited[curr] = True
         print(curr, end=" ")
-        que.extend(graph[curr])
+        que.extend(reversed(graph[curr]))
 
 
 if __name__ == "__main__":
@@ -51,11 +51,12 @@ if __name__ == "__main__":
     # 링크를 토대로 그래프 작성
     for i in link:
         graph[i[0]].append(i[1])
+        graph[i[1]].append(i[0])
     
     for i in graph:
         i.sort(reverse=True)
     
-    print(graph)
+    # print(graph)
     
     dfs(graph, v)
     print()
