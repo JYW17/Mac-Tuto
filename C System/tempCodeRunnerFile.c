@@ -1,0 +1,1 @@
+"%d %d %d %d\n", count1, count2, count3, rst)
