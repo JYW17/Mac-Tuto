@@ -18,8 +18,6 @@
 #         rst = i
 #         break
 
-print("안녕하세요")
-print(1,2,3,4,5)
-lis = [1,2,3,4,5,6]
-for i in lis:
-    print(i)
+lis = [0] *10
+print(not lis[9])
+print(not 1)
