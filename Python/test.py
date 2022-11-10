@@ -18,8 +18,9 @@
 #         rst = i
 #         break
 
-print("안녕하세요")
-print(1,2,3,4,5)
-lis = [1,2,3,4,5,6]
-for i in lis:
-    print(i)
+import sys
+
+a = input()
+b = sys.stdin.readline()
+print(a)
+print(b)
