@@ -21,4 +21,4 @@ if __name__ == "__main__":
     MAX = 10**6
     distance = [0] * (MAX+1)
     bfs(distance= distance, n=n, k=k)
-    print(distance[k])
+    print(distance[k]) 
