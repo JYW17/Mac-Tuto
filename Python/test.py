@@ -20,7 +20,11 @@
 
 import sys
 
-a = input()
-b = sys.stdin.readline()
-print(a)
-print(b)
+set0 = set()
+
+set0.add(1)
+set0.add(1)
+set0.add(2)
+
+
+print(set0)
