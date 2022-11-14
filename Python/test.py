@@ -18,13 +18,8 @@
 #         rst = i
 #         break
 
-import sys
+import random
 
-set0 = set()
-
-set0.add(1)
-set0.add(1)
-set0.add(2)
-
-
-print(set0)
+print(random.randint(1,5), end=": ")
+for i in range(6):
+    print(random.randint(1,10), end=" ")
