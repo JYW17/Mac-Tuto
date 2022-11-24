@@ -58,8 +58,8 @@
 # ff = ForestFactory()
 # ff.make_sound("Dog")
 
-lis = [1,2,3,4,5]
-
-print(lis[0:5])
-print(lis[0:1])
-print(lis[2:2])
+from collections import Counter
+n = int(input())
+cn = Counter(list(map(int, input().split())))
+v = int(input())
+print(cn[v])

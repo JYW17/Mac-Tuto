@@ -20,6 +20,21 @@
 
 import random
 
-print(random.randint(1,5), end=": ")
-for i in range(6):
-    print(random.randint(1,10), end=" ")
+# print(random.randint(1,5), end=": ")
+# for i in range(6):
+#     print(random.randint(1,10), end=" ")
+# print()
+
+visited = []
+
+while True:
+    x = random.randint(1,45)
+    while x not in visited:
+        visited.append(x)
+    if len(visited) >= 6:
+        break
+
+visited.sort()
+print('이번의 로또!!', end='')
+for i in visited:
+    print(i, end=' ')
