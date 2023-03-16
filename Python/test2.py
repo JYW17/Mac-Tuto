@@ -58,8 +58,43 @@
 # ff = ForestFactory()
 # ff.make_sound("Dog")
 
-from collections import Counter
-n = int(input())
-cn = Counter(list(map(int, input().split())))
-v = int(input())
-print(cn[v])
+# from collections import Counter
+# n = int(input())
+# cn = Counter(list(map(int, input().split())))
+# v = int(input())
+# print(cn[v])
+
+# def sub(arr):
+#     arr[0] = 0
+
+# def sub2(x):
+#     x += 1
+
+# lis = [5,5,5,5,5]
+# print('before sub: ', lis)
+# sub(lis)
+# print('after sub', lis)
+
+# x=10
+# print('before sub2: ', x)
+# sub2(x)
+# print('after sub2: ', x)
+
+import time
+import datetime
+
+fibList = list()
+fibList.append(0)
+fibList.append(1)
+
+start = time.time()
+
+for n in range(2, 1000001):
+    fibList.append(fibList[n-1] + fibList[n-2]) 
+
+end = time.time()
+iterationSec = end - start
+print("반복문 실행 시간:", datetime.timedelta(seconds = iterationSec))
+print()
+
+
