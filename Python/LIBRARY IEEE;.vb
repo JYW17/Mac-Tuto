@@ -1,0 +1,28 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY TEST IS
+PORT(
+    A,B: IN STD_LOGIC;
+    X : OUST STD_LOGIC
+);
+END TEST;
+
+ARCHITECTURE HB OF TEST IS
+
+BEGIN
+PROCESS(A,B)
+BEGIN
+    IF A = '0' AND B = '0' THEN
+        X <= '0'
+    IF A = '0' AND B = '1' THEN
+        X <= '0'
+    IF A = '1' AND B = '0' THEN
+        X <= '0'
+    IF A = '1' AND B = '1' THEN
+        X <= '0'
+    END IF;
+END PROCESS;
+
+END HB;

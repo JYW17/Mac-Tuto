@@ -80,21 +80,20 @@
 # sub2(x)
 # print('after sub2: ', x)
 
-import time
-import datetime
+# import time
+# import datetime
 
-fibList = list()
-fibList.append(0)
-fibList.append(1)
+# fibList = list()
+# fibList.append(0)
+# fibList.append(1)
 
-start = time.time()
+# start = time.time()
 
-for n in range(2, 1000001):
-    fibList.append(fibList[n-1] + fibList[n-2]) 
+# for n in range(2, 1000001):
+#     fibList.append(fibList[n-1] + fibList[n-2]) 
 
-end = time.time()
-iterationSec = end - start
-print("반복문 실행 시간:", datetime.timedelta(seconds = iterationSec))
-print()
-
+# end = time.time()
+# iterationSec = end - start
+# print("반복문 실행 시간:", datetime.timedelta(seconds = iterationSec))
+# print()
 
