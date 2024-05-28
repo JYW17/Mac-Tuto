@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <time.h>
 
-long fibo(long n){
-    if(n<2){
-        return n;
-    }
-    return fibo(n-2) + fibo(n-1);
-}
-
+// long fibo(long n){
+//     if(n<2){
+//         return n;
+//     }
+//     return fibo(n-2) + fibo(n-1);
+// }
 
 
 
@@ -30,11 +29,18 @@ int main(void){
     //     printf("%d\n", i);
     // }
 
-    clock_t start = clock();
-    printf("%ld", fibo(50));
-    clock_t end = clock();
+    // clock_t start = clock();
+    // printf("%ld", fibo(50));
+    // clock_t end = clock();
     
-    printf("소요 시간: %lf\n", (double)(end - start) / CLOCKS_PER_SEC);
+    // printf("소요 시간: %lf\n", (double)(end - start) / CLOCKS_PER_SEC);
+
+    // return 0;
+
+    const int a;
+
+
+    printf("a: %d", a);
 
     return 0;
 }
